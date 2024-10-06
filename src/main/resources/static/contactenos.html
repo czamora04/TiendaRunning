@@ -22,10 +22,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="contactenos.html">&LeftTriangleBar;</a>
+                                <a class="nav-link active" aria-current="page" href="video.html">&LeftTriangleBar;</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="quienessomos.html">&RightTriangleBar;</a>
+                                <a class="nav-link active" aria-current="page" href="indexTR.html">&RightTriangleBar;</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a>
@@ -56,26 +56,68 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
             </nav>
         </header>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/adiosPro4.jpg" class="d-block w-100" alt="Adidas Adizero Adios Pro 4">
+        <div class="container-fluid">
+            <h1 class="display-1">Contactenos</h1><br>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="labelNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/nbElite4.jpg" class="d-block w-100" alt="New Balance SC Elite V4">
+                <div class="col-md-6">
+                    <label for="labelApellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="inputApellido">
                 </div>
-                <div class="carousel-item">
-                    <img src="img/sauconyElite.jpg" class="d-block w-100" alt="Saucony Endorphin Elite">
+                <div class="col-md-6">
+                    <label for="labelEmail" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="labelCEmail" class="form-label">Confirmar Correo Electrónico</label>
+                    <input type="email" class="form-control" id="inputCEmail">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Pregunta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Comentario
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="labelComentario" class="form-label">Su Comentario</label>
+                    <textarea class="form-control" id="textComentario" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                </div>
+            </form>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmación</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="confirmacion" class="col-form-label">¿Segur@ que desea enviar su consulta o comentario?</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <hr>
+            <div>
+                <p><em>Esta página contiene lo practicado en Formulario y ejemploModal.</em></p>
+            </div>
         </div>
         <div class="container-fluid">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
